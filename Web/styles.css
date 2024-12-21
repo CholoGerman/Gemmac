@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #004aad; /* Azul */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 15px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contact .phone {
+  background-color: #ff0000; /* Rojo */
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact .phone:hover {
+  background-color: #cc0000;
+}
+
+/* General del header */
+header .contact {
+  display: flex;
+  align-items: center;
+}
+.contact {
+  background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+  border-radius: 50px; /* Bordes redondeados para diseño suave */
+  padding: 0.5rem; /* Espaciado interno */
+  display: inline-flex; /* Ajustar al tamaño del contenido */
+  align-items: center; /* Centrar verticalmente */
+}
+
+
+/* Estilo del enlace de WhatsApp */
+header .contact .whatsapp {
+  color: #25D366; /* Color del texto e ícono */
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre ícono y texto */
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background-color: rgba(37, 211, 102, 0.1); /* Fondo suave */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header .contact .whatsapp i {
+  font-size: 1.5rem; /* Tamaño del ícono */
+}
+
+/* Hover con efecto */
+header .contact .whatsapp:hover {
+  background-color: rgba(37, 211, 102, 0.3);
+  transform: scale(1.05);
+}
+.contact .whatsapp img.icon {
+  width: 24px; /* Tamaño ajustado */
+  height: 24px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 500px;
+  background: url('https://images.unsplash.com/photo-1541976590-713941681591') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #00a400; /* Verde */
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #004aad; /* Azul */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #003380;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #f0f8ff; /* Azul claro */
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.service-info h3 {
+  font-size: 1.5rem;
+  color: #008000; /* Verde */
+}
+
+.service-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #004aad; /* Azul */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+footer .social-icons {
+  margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #00a400; /* Verde */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.back-to-top {
+  opacity: 0;
+}
+.back-to-top:hover {
+  background-color: #003380; /* Azul más oscuro */
+  transform: scale(1.1);
+}
+
+.portfolio {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 15px;
+}
+
+.portfolio-info h3 {
+  font-size: 1.5rem;
+  color: #0056b3; /* Azul */
+}
+
+.portfolio-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
